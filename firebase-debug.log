@@ -1,0 +1,772 @@
+[debug] [2024-12-17T03:21:17.727Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:21:17.729Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2024-12-17T03:21:17.729Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:21:17.730Z] Platform:      win32
+[debug] [2024-12-17T03:21:17.730Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:21:17.730Z] Time:          Tue Dec 17 2024 09:21:17 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:21:17.730Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:21:17.733Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2024-12-17T03:21:18.426Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-12-17T03:21:18.427Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=61592360&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-12-17T03:22:10.920Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2024-12-17T03:22:10.921Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2024-12-17T03:22:11.283Z] <<< [apiv2][status] POST https://accounts.google.com/o/oauth2/token 200
+[debug] [2024-12-17T03:22:11.284Z] <<< [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[info] 
+[info] +  Success! Logged in as defauilt.ru@gmail.com 
+[debug] [2024-12-17T03:22:22.620Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:22:22.623Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-12-17T03:22:22.623Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:22:22.623Z] Platform:      win32
+[debug] [2024-12-17T03:22:22.624Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:22:22.624Z] Time:          Tue Dec 17 2024 09:22:22 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:22:22.624Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:22:22.684Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T03:22:22.685Z] > authorizing via signed-in user (defauilt.ru@gmail.com)
+[debug] [2024-12-17T03:22:22.685Z] [iam] checking project final-cryptocurrency for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-17T03:22:22.687Z] Checked if tokens are valid: true, expires at: 1734409330284
+[debug] [2024-12-17T03:22:22.687Z] Checked if tokens are valid: true, expires at: 1734409330284
+[debug] [2024-12-17T03:22:22.688Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-cryptocurrency:testIamPermissions [none]
+[debug] [2024-12-17T03:22:22.689Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-cryptocurrency:testIamPermissions x-goog-quota-user=projects/final-cryptocurrency
+[debug] [2024-12-17T03:22:22.689Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-cryptocurrency:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-17T03:22:23.972Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-cryptocurrency:testIamPermissions 200
+[debug] [2024-12-17T03:22:23.973Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-cryptocurrency:testIamPermissions {}
+[debug] [2024-12-17T03:22:23.974Z] [iam] error while checking permissions, command may fail: Authorization failed. This account is missing the following required permissions on project final-cryptocurrency:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2024-12-17T03:22:23.975Z] Checked if tokens are valid: true, expires at: 1734409330284
+[debug] [2024-12-17T03:22:23.975Z] Checked if tokens are valid: true, expires at: 1734409330284
+[debug] [2024-12-17T03:22:23.976Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/final-cryptocurrency [none]
+[debug] [2024-12-17T03:22:24.473Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/final-cryptocurrency 403
+[debug] [2024-12-17T03:22:24.473Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/final-cryptocurrency {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-12-17T03:22:24.474Z] Request to https://firebase.googleapis.com/v1beta1/projects/final-cryptocurrency had HTTP Error: 403, The caller does not have permission
+[debug] [2024-12-17T03:22:24.799Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/final-cryptocurrency had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project final-cryptocurrency. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-12-17T03:23:48.986Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:23:48.988Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list
+[debug] [2024-12-17T03:23:48.989Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:23:48.989Z] Platform:      win32
+[debug] [2024-12-17T03:23:48.989Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:23:48.989Z] Time:          Tue Dec 17 2024 09:23:48 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:23:48.989Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:23:49.049Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T03:23:49.050Z] > authorizing via signed-in user (defauilt.ru@gmail.com)
+[debug] [2024-12-17T03:23:49.055Z] Checked if tokens are valid: true, expires at: 1734409330284
+[debug] [2024-12-17T03:23:49.055Z] Checked if tokens are valid: true, expires at: 1734409330284
+[debug] [2024-12-17T03:23:49.057Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2024-12-17T03:23:49.793Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-12-17T03:23:49.794Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] No projects found.
+[debug] [2024-12-17T03:25:57.292Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:25:57.295Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:create final-eldar
+[debug] [2024-12-17T03:25:57.295Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:25:57.295Z] Platform:      win32
+[debug] [2024-12-17T03:25:57.295Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:25:57.296Z] Time:          Tue Dec 17 2024 09:25:57 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:25:57.296Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:25:57.358Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T03:25:57.359Z] > authorizing via signed-in user (defauilt.ru@gmail.com)
+[debug] [2024-12-17T03:26:13.224Z] Checked if tokens are valid: true, expires at: 1734409330284
+[debug] [2024-12-17T03:26:13.225Z] Checked if tokens are valid: true, expires at: 1734409330284
+[debug] [2024-12-17T03:26:13.226Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2024-12-17T03:26:13.226Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"final-eldar","name":"final_eldar"}
+[debug] [2024-12-17T03:26:14.248Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 400
+[debug] [2024-12-17T03:26:14.248Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"error":{"code":400,"message":"field [display_name] has issue [project display name contains invalid characters]","status":"INVALID_ARGUMENT","details":[{"@type":"type.googleapis.com/google.rpc.BadRequest","fieldViolations":[{"field":"display_name","description":"project display name contains invalid characters"}]},{"@type":"type.googleapis.com/google.rpc.Help","links":[{"url":"https://cloud.google.com/resource-manager/reference/rest/v1/projects"}]}]}}
+[debug] [2024-12-17T03:26:14.476Z] FirebaseError: Request to https://cloudresourcemanager.googleapis.com/v1/projects had HTTP Error: 400, field [display_name] has issue [project display name contains invalid characters]
+    at responseToError (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to create project. See firebase-debug.log for more info.
+[debug] [2024-12-17T03:28:10.464Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:28:10.467Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js logout
+[debug] [2024-12-17T03:28:10.467Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:28:10.467Z] Platform:      win32
+[debug] [2024-12-17T03:28:10.467Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:28:10.468Z] Time:          Tue Dec 17 2024 09:28:10 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:28:10.468Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:28:10.546Z] >>> [apiv2][query] GET https://accounts.google.com/o/oauth2/revoke token=1%2F%2F0cP9Lc4PRt3k-CgYIARAAGAwSNwF-L9Ir7CmUV7rueepnejifnOp_hoHRqcdUkyYfWHQik_gj6l7DR9PsWJVHMPs5VmsRqYL61kE
+[debug] [2024-12-17T03:28:12.083Z] <<< [apiv2][status] GET https://accounts.google.com/o/oauth2/revoke 200
+[debug] [2024-12-17T03:28:21.892Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:28:21.895Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2024-12-17T03:28:21.895Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:28:21.895Z] Platform:      win32
+[debug] [2024-12-17T03:28:21.896Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:28:21.896Z] Time:          Tue Dec 17 2024 09:28:21 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:28:21.896Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=52800970&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-12-17T03:29:30.527Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2024-12-17T03:29:30.527Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2024-12-17T03:29:30.856Z] <<< [apiv2][status] POST https://accounts.google.com/o/oauth2/token 200
+[debug] [2024-12-17T03:29:30.857Z] <<< [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[info] 
+[info] +  Success! Logged in as tashbolotov_e@auca.kg 
+[debug] [2024-12-17T03:31:40.752Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:31:40.754Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2024-12-17T03:31:40.754Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:31:40.755Z] Platform:      win32
+[debug] [2024-12-17T03:31:40.755Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:31:40.755Z] Time:          Tue Dec 17 2024 09:31:40 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:31:40.755Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:31:40.826Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T03:31:40.827Z] > authorizing via signed-in user (tashbolotov_e@auca.kg)
+[debug] [2024-12-17T03:31:40.829Z] Checked if tokens are valid: true, expires at: 1734409769857
+[debug] [2024-12-17T03:31:40.829Z] Checked if tokens are valid: true, expires at: 1734409769857
+[debug] [2024-12-17T03:31:40.831Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2024-12-17T03:31:41.556Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-12-17T03:31:41.556Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2024-12-17T03:31:41.568Z] TypeError: Cannot read properties of undefined (reading 'value')
+    at ListPrompt.getCurrentValue (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\inquirer\lib\prompts\list.js:145:53)
+    at C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\map.js:10:37
+    at OperatorSubscriber._this._next (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\OperatorSubscriber.js:33:21)
+    at Subscriber.next (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\Subscriber.js:51:18)
+    at C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\take.js:15:32
+    at OperatorSubscriber._this._next (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\operators\OperatorSubscriber.js:33:21)
+    at Subscriber.next (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\Subscriber.js:51:18)
+    at Interface.handler (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\rxjs\dist\cjs\internal\observable\fromEvent.js:59:31)
+    at Interface.emit (node:events:536:35)
+    at Interface.emit (node:domain:489:12)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-12-17T03:32:49.594Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:32:49.596Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-12-17T03:32:49.597Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:32:49.597Z] Platform:      win32
+[debug] [2024-12-17T03:32:49.597Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:32:49.597Z] Time:          Tue Dec 17 2024 09:32:49 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:32:49.598Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:32:49.659Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T03:32:49.660Z] > authorizing via signed-in user (tashbolotov_e@auca.kg)
+[debug] [2024-12-17T03:32:49.660Z] [iam] checking project final-eldar for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-17T03:32:49.662Z] Checked if tokens are valid: true, expires at: 1734409769857
+[debug] [2024-12-17T03:32:49.662Z] Checked if tokens are valid: true, expires at: 1734409769857
+[debug] [2024-12-17T03:32:49.663Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions [none]
+[debug] [2024-12-17T03:32:49.664Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions x-goog-quota-user=projects/final-eldar
+[debug] [2024-12-17T03:32:49.664Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-17T03:32:50.874Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions 200
+[debug] [2024-12-17T03:32:50.875Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions {}
+[debug] [2024-12-17T03:32:50.875Z] [iam] error while checking permissions, command may fail: Authorization failed. This account is missing the following required permissions on project final-eldar:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2024-12-17T03:32:50.876Z] Checked if tokens are valid: true, expires at: 1734409769857
+[debug] [2024-12-17T03:32:50.877Z] Checked if tokens are valid: true, expires at: 1734409769857
+[debug] [2024-12-17T03:32:50.877Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar [none]
+[debug] [2024-12-17T03:32:51.457Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar 403
+[debug] [2024-12-17T03:32:51.457Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-12-17T03:32:51.459Z] Request to https://firebase.googleapis.com/v1beta1/projects/final-eldar had HTTP Error: 403, The caller does not have permission
+[debug] [2024-12-17T03:32:51.660Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/final-eldar had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project final-eldar. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-12-17T03:33:46.346Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:33:46.348Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-12-17T03:33:46.349Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:33:46.349Z] Platform:      win32
+[debug] [2024-12-17T03:33:46.349Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:33:46.349Z] Time:          Tue Dec 17 2024 09:33:46 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:33:46.349Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:33:46.421Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T03:33:46.422Z] > authorizing via signed-in user (tashbolotov_e@auca.kg)
+[debug] [2024-12-17T03:33:46.423Z] [iam] checking project final-eldar for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-17T03:33:46.424Z] Checked if tokens are valid: true, expires at: 1734409769857
+[debug] [2024-12-17T03:33:46.424Z] Checked if tokens are valid: true, expires at: 1734409769857
+[debug] [2024-12-17T03:33:46.425Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions [none]
+[debug] [2024-12-17T03:33:46.425Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions x-goog-quota-user=projects/final-eldar
+[debug] [2024-12-17T03:33:46.426Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-17T03:33:47.446Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions 200
+[debug] [2024-12-17T03:33:47.446Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions {}
+[debug] [2024-12-17T03:33:47.447Z] [iam] error while checking permissions, command may fail: Authorization failed. This account is missing the following required permissions on project final-eldar:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2024-12-17T03:33:47.447Z] Checked if tokens are valid: true, expires at: 1734409769857
+[debug] [2024-12-17T03:33:47.447Z] Checked if tokens are valid: true, expires at: 1734409769857
+[debug] [2024-12-17T03:33:47.448Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar [none]
+[debug] [2024-12-17T03:33:48.067Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar 403
+[debug] [2024-12-17T03:33:48.068Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-12-17T03:33:48.069Z] Request to https://firebase.googleapis.com/v1beta1/projects/final-eldar had HTTP Error: 403, The caller does not have permission
+[debug] [2024-12-17T03:33:48.280Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/final-eldar had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project final-eldar. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-12-17T03:38:12.291Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:38:12.294Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js logout
+[debug] [2024-12-17T03:38:12.294Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:38:12.294Z] Platform:      win32
+[debug] [2024-12-17T03:38:12.294Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:38:12.294Z] Time:          Tue Dec 17 2024 09:38:12 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:38:12.295Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:38:12.376Z] >>> [apiv2][query] GET https://accounts.google.com/o/oauth2/revoke token=1%2F%2F0cuG6NmSs64-0CgYIARAAGAwSNwF-L9IrxrOFHq9ksnnb3-X-V7aKOfXd71GAuH6FZTqaqEohkW2CWdDrbxFe2cOF4JOfvjMZskI
+[debug] [2024-12-17T03:38:12.860Z] <<< [apiv2][status] GET https://accounts.google.com/o/oauth2/revoke 200
+[debug] [2024-12-17T03:38:21.432Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:38:21.435Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2024-12-17T03:38:21.436Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:38:21.436Z] Platform:      win32
+[debug] [2024-12-17T03:38:21.436Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:38:21.436Z] Time:          Tue Dec 17 2024 09:38:21 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:38:21.436Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=506554942&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-12-17T03:38:32.229Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2024-12-17T03:38:32.230Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2024-12-17T03:38:32.551Z] <<< [apiv2][status] POST https://accounts.google.com/o/oauth2/token 200
+[debug] [2024-12-17T03:38:32.551Z] <<< [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[info] 
+[info] +  Success! Logged in as tashbolotov_e@auca.kg 
+[debug] [2024-12-17T03:38:45.431Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:38:45.433Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-12-17T03:38:45.433Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:38:45.433Z] Platform:      win32
+[debug] [2024-12-17T03:38:45.433Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:38:45.434Z] Time:          Tue Dec 17 2024 09:38:45 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:38:45.434Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:38:45.488Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T03:38:45.489Z] > authorizing via signed-in user (tashbolotov_e@auca.kg)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Рабочий стол\final
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-12-17T03:41:01.360Z] Using project from CLI flag: final-eldar
+[debug] [2024-12-17T03:41:01.361Z] Checked if tokens are valid: true, expires at: 1734410311551
+[debug] [2024-12-17T03:41:01.362Z] Checked if tokens are valid: true, expires at: 1734410311551
+[debug] [2024-12-17T03:41:01.363Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar [none]
+[debug] [2024-12-17T03:41:02.101Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar 403
+[debug] [2024-12-17T03:41:02.101Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-12-17T03:41:02.102Z] Request to https://firebase.googleapis.com/v1beta1/projects/final-eldar had HTTP Error: 403, The caller does not have permission
+[debug] [2024-12-17T03:41:02.339Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/final-eldar had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project final-eldar. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-12-17T03:41:43.295Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:41:43.298Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-12-17T03:41:43.298Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:41:43.298Z] Platform:      win32
+[debug] [2024-12-17T03:41:43.298Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:41:43.298Z] Time:          Tue Dec 17 2024 09:41:43 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:41:43.299Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:41:43.353Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T03:41:43.354Z] > authorizing via signed-in user (tashbolotov_e@auca.kg)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Рабочий стол\final
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2024-12-17T03:46:00.335Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:46:00.337Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use
+[debug] [2024-12-17T03:46:00.338Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:46:00.338Z] Platform:      win32
+[debug] [2024-12-17T03:46:00.338Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:46:00.338Z] Time:          Tue Dec 17 2024 09:46:00 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:46:00.338Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:46:00.395Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T03:46:00.396Z] > authorizing via signed-in user (tashbolotov_e@auca.kg)
+[info] Active Project: default (final-eldar)
+[info] 
+[info] Project aliases for C:\Рабочий стол\final:
+[info] 
+[info] * default (final-eldar)
+[info] 
+[info] Run firebase use --add to define a new project alias.
+[debug] [2024-12-17T03:46:32.343Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:46:32.345Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-12-17T03:46:32.346Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:46:32.346Z] Platform:      win32
+[debug] [2024-12-17T03:46:32.346Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:46:32.346Z] Time:          Tue Dec 17 2024 09:46:32 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:46:32.346Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:46:32.419Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T03:46:32.420Z] > authorizing via signed-in user (tashbolotov_e@auca.kg)
+[debug] [2024-12-17T03:46:32.421Z] [iam] checking project final-eldar for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-17T03:46:32.422Z] Checked if tokens are valid: true, expires at: 1734410311551
+[debug] [2024-12-17T03:46:32.422Z] Checked if tokens are valid: true, expires at: 1734410311551
+[debug] [2024-12-17T03:46:32.423Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions [none]
+[debug] [2024-12-17T03:46:32.423Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions x-goog-quota-user=projects/final-eldar
+[debug] [2024-12-17T03:46:32.423Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-17T03:46:33.692Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions 200
+[debug] [2024-12-17T03:46:33.692Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions {}
+[debug] [2024-12-17T03:46:33.693Z] [iam] error while checking permissions, command may fail: Authorization failed. This account is missing the following required permissions on project final-eldar:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2024-12-17T03:46:33.693Z] Checked if tokens are valid: true, expires at: 1734410311551
+[debug] [2024-12-17T03:46:33.693Z] Checked if tokens are valid: true, expires at: 1734410311551
+[debug] [2024-12-17T03:46:33.694Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar [none]
+[debug] [2024-12-17T03:46:34.524Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar 403
+[debug] [2024-12-17T03:46:34.524Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-12-17T03:46:34.525Z] Request to https://firebase.googleapis.com/v1beta1/projects/final-eldar had HTTP Error: 403, The caller does not have permission
+[debug] [2024-12-17T03:46:34.825Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/final-eldar had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project final-eldar. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-12-17T03:47:19.875Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:47:19.877Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js logout
+[debug] [2024-12-17T03:47:19.878Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:47:19.878Z] Platform:      win32
+[debug] [2024-12-17T03:47:19.878Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:47:19.878Z] Time:          Tue Dec 17 2024 09:47:19 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:47:19.878Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:47:19.977Z] >>> [apiv2][query] GET https://accounts.google.com/o/oauth2/revoke token=1%2F%2F0cZ9S26wo9S0fCgYIARAAGAwSNwF-L9IryNQZk5w8QlMvXkYlxI_EdonUyo4knI-2pkgsUsirRtGDGNgfZGLFcayrCS-skKUWMGA
+[debug] [2024-12-17T03:47:20.457Z] <<< [apiv2][status] GET https://accounts.google.com/o/oauth2/revoke 200
+[debug] [2024-12-17T03:47:24.242Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:47:24.244Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2024-12-17T03:47:24.245Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:47:24.245Z] Platform:      win32
+[debug] [2024-12-17T03:47:24.245Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:47:24.245Z] Time:          Tue Dec 17 2024 09:47:24 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:47:24.245Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=558506390&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-12-17T03:47:32.890Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2024-12-17T03:47:32.891Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2024-12-17T03:47:33.258Z] <<< [apiv2][status] POST https://accounts.google.com/o/oauth2/token 200
+[debug] [2024-12-17T03:47:33.259Z] <<< [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[info] 
+[info] +  Success! Logged in as tashbolotov.el@gmail.com 
+[debug] [2024-12-17T03:47:45.361Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:47:45.364Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-12-17T03:47:45.364Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:47:45.364Z] Platform:      win32
+[debug] [2024-12-17T03:47:45.364Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:47:45.364Z] Time:          Tue Dec 17 2024 09:47:45 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:47:45.365Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:47:45.423Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T03:47:45.423Z] > authorizing via signed-in user (tashbolotov.el@gmail.com)
+[debug] [2024-12-17T03:47:45.424Z] [iam] checking project final-eldar for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-17T03:47:45.425Z] Checked if tokens are valid: true, expires at: 1734410852259
+[debug] [2024-12-17T03:47:45.425Z] Checked if tokens are valid: true, expires at: 1734410852259
+[debug] [2024-12-17T03:47:45.426Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions [none]
+[debug] [2024-12-17T03:47:45.426Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions x-goog-quota-user=projects/final-eldar
+[debug] [2024-12-17T03:47:45.427Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-17T03:47:46.576Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions 200
+[debug] [2024-12-17T03:47:46.577Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions {}
+[debug] [2024-12-17T03:47:46.577Z] [iam] error while checking permissions, command may fail: Authorization failed. This account is missing the following required permissions on project final-eldar:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2024-12-17T03:47:46.577Z] Checked if tokens are valid: true, expires at: 1734410852259
+[debug] [2024-12-17T03:47:46.578Z] Checked if tokens are valid: true, expires at: 1734410852259
+[debug] [2024-12-17T03:47:46.578Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar [none]
+[debug] [2024-12-17T03:47:47.169Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar 403
+[debug] [2024-12-17T03:47:47.170Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-12-17T03:47:47.170Z] Request to https://firebase.googleapis.com/v1beta1/projects/final-eldar had HTTP Error: 403, The caller does not have permission
+[debug] [2024-12-17T03:47:47.411Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/final-eldar had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project final-eldar. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-12-17T03:47:53.371Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:47:53.374Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js logout
+[debug] [2024-12-17T03:47:53.374Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:47:53.374Z] Platform:      win32
+[debug] [2024-12-17T03:47:53.374Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:47:53.375Z] Time:          Tue Dec 17 2024 09:47:53 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:47:53.375Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:47:53.448Z] >>> [apiv2][query] GET https://accounts.google.com/o/oauth2/revoke token=1%2F%2F0c9DomOPRFTd1CgYIARAAGAwSNwF-L9IrfIx_NfKx4bZhDl-fh1yfCprAbT28iGVSwJrUr4OJrMjJZsQk07EuEWndIiq2RNiVZQw
+[debug] [2024-12-17T03:47:53.805Z] <<< [apiv2][status] GET https://accounts.google.com/o/oauth2/revoke 200
+[debug] [2024-12-17T03:47:58.799Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:47:58.802Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2024-12-17T03:47:58.802Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:47:58.802Z] Platform:      win32
+[debug] [2024-12-17T03:47:58.802Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:47:58.802Z] Time:          Tue Dec 17 2024 09:47:58 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:47:58.803Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=237285682&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-12-17T03:48:12.500Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2024-12-17T03:48:12.501Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2024-12-17T03:48:12.826Z] <<< [apiv2][status] POST https://accounts.google.com/o/oauth2/token 200
+[debug] [2024-12-17T03:48:12.826Z] <<< [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[info] 
+[info] +  Success! Logged in as defauilt.ru@gmail.com 
+[debug] [2024-12-17T03:48:21.678Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:48:21.681Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-12-17T03:48:21.682Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:48:21.682Z] Platform:      win32
+[debug] [2024-12-17T03:48:21.682Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:48:21.682Z] Time:          Tue Dec 17 2024 09:48:21 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:48:21.682Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:48:21.736Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T03:48:21.737Z] > authorizing via signed-in user (defauilt.ru@gmail.com)
+[debug] [2024-12-17T03:48:21.737Z] [iam] checking project final-eldar for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-17T03:48:21.739Z] Checked if tokens are valid: true, expires at: 1734410891827
+[debug] [2024-12-17T03:48:21.739Z] Checked if tokens are valid: true, expires at: 1734410891827
+[debug] [2024-12-17T03:48:21.740Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions [none]
+[debug] [2024-12-17T03:48:21.740Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions x-goog-quota-user=projects/final-eldar
+[debug] [2024-12-17T03:48:21.740Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-17T03:48:22.875Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions 200
+[debug] [2024-12-17T03:48:22.875Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/final-eldar:testIamPermissions {}
+[debug] [2024-12-17T03:48:22.876Z] [iam] error while checking permissions, command may fail: Authorization failed. This account is missing the following required permissions on project final-eldar:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2024-12-17T03:48:22.876Z] Checked if tokens are valid: true, expires at: 1734410891827
+[debug] [2024-12-17T03:48:22.876Z] Checked if tokens are valid: true, expires at: 1734410891827
+[debug] [2024-12-17T03:48:22.877Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar [none]
+[debug] [2024-12-17T03:48:23.272Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar 403
+[debug] [2024-12-17T03:48:23.272Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/final-eldar {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2024-12-17T03:48:23.273Z] Request to https://firebase.googleapis.com/v1beta1/projects/final-eldar had HTTP Error: 403, The caller does not have permission
+[debug] [2024-12-17T03:48:23.497Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/final-eldar had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to get Firebase project final-eldar. Please make sure the project exists and your account has permission to access it.
+[debug] [2024-12-17T03:48:31.152Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:48:31.154Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use
+[debug] [2024-12-17T03:48:31.155Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:48:31.155Z] Platform:      win32
+[debug] [2024-12-17T03:48:31.155Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:48:31.155Z] Time:          Tue Dec 17 2024 09:48:31 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:48:31.155Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:48:31.212Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T03:48:31.213Z] > authorizing via signed-in user (defauilt.ru@gmail.com)
+[info] Active Project: default (final-eldar)
+[info] 
+[info] Project aliases for C:\Рабочий стол\final:
+[info] 
+[info] * default (final-eldar)
+[info] 
+[info] Run firebase use --add to define a new project alias.
+[debug] [2024-12-17T03:49:49.181Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:49:49.183Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js logout
+[debug] [2024-12-17T03:49:49.183Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:49:49.183Z] Platform:      win32
+[debug] [2024-12-17T03:49:49.184Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:49:49.184Z] Time:          Tue Dec 17 2024 09:49:49 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:49:49.184Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:49:49.258Z] >>> [apiv2][query] GET https://accounts.google.com/o/oauth2/revoke token=1%2F%2F0c_66CwCe_-VACgYIARAAGAwSNwF-L9IrLqMwHFRm4FWjIozJHsiHDNJ_x00cSCriv57pLYZyd-6oBzkUDD73J5k95upuCugcEpU
+[debug] [2024-12-17T03:49:49.578Z] <<< [apiv2][status] GET https://accounts.google.com/o/oauth2/revoke 200
+[debug] [2024-12-17T03:49:54.841Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:49:54.843Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2024-12-17T03:49:54.844Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:49:54.844Z] Platform:      win32
+[debug] [2024-12-17T03:49:54.844Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:49:54.844Z] Time:          Tue Dec 17 2024 09:49:54 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:49:54.844Z] ----------------------------------------------------------------------
+[debug] 
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=513983819&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-12-17T03:50:04.197Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2024-12-17T03:50:04.197Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2024-12-17T03:50:04.499Z] <<< [apiv2][status] POST https://accounts.google.com/o/oauth2/token 200
+[debug] [2024-12-17T03:50:04.499Z] <<< [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[info] 
+[info] +  Success! Logged in as tashbolotov_e@auca.kg 
+[debug] [2024-12-17T03:50:21.632Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:50:21.635Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use
+[debug] [2024-12-17T03:50:21.635Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:50:21.635Z] Platform:      win32
+[debug] [2024-12-17T03:50:21.635Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:50:21.636Z] Time:          Tue Dec 17 2024 09:50:21 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:50:21.636Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:50:21.692Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T03:50:21.692Z] > authorizing via signed-in user (tashbolotov_e@auca.kg)
+[info] Active Project: default (final-eldar)
+[info] 
+[info] Project aliases for C:\Рабочий стол\final:
+[info] 
+[info] * default (final-eldar)
+[info] 
+[info] Run firebase use --add to define a new project alias.
+[debug] [2024-12-17T03:50:30.164Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:50:30.166Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js use --add
+[debug] [2024-12-17T03:50:30.166Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:50:30.166Z] Platform:      win32
+[debug] [2024-12-17T03:50:30.167Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:50:30.167Z] Time:          Tue Dec 17 2024 09:50:30 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:50:30.167Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:50:30.222Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T03:50:30.223Z] > authorizing via signed-in user (tashbolotov_e@auca.kg)
+[debug] [2024-12-17T03:50:30.224Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:50:30.225Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:50:30.226Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2024-12-17T03:50:30.933Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-12-17T03:50:30.933Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] 
+[info] Created alias default for eldar-9d86d.
+[info] Now using alias default (eldar-9d86d)
+[debug] [2024-12-17T03:51:24.602Z] ----------------------------------------------------------------------
+[debug] [2024-12-17T03:51:24.604Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\defau\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-12-17T03:51:24.605Z] CLI Version:   13.29.1
+[debug] [2024-12-17T03:51:24.605Z] Platform:      win32
+[debug] [2024-12-17T03:51:24.605Z] Node Version:  v22.12.0
+[debug] [2024-12-17T03:51:24.605Z] Time:          Tue Dec 17 2024 09:51:24 GMT+0600 (Киргизия)
+[debug] [2024-12-17T03:51:24.605Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-12-17T03:51:24.661Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-12-17T03:51:24.661Z] > authorizing via signed-in user (tashbolotov_e@auca.kg)
+[debug] [2024-12-17T03:51:24.662Z] [iam] checking project eldar-9d86d for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-12-17T03:51:24.663Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:24.663Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:24.664Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/eldar-9d86d:testIamPermissions [none]
+[debug] [2024-12-17T03:51:24.664Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/eldar-9d86d:testIamPermissions x-goog-quota-user=projects/eldar-9d86d
+[debug] [2024-12-17T03:51:24.664Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/eldar-9d86d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-17T03:51:25.690Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/eldar-9d86d:testIamPermissions 200
+[debug] [2024-12-17T03:51:25.691Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/eldar-9d86d:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-12-17T03:51:25.691Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:25.692Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:25.692Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/eldar-9d86d [none]
+[debug] [2024-12-17T03:51:26.131Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/eldar-9d86d 200
+[debug] [2024-12-17T03:51:26.131Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/eldar-9d86d {"projectId":"eldar-9d86d","projectNumber":"907469813370","displayName":"eldar-final","name":"projects/eldar-9d86d","resources":{"hostingSite":"eldar-9d86d"},"state":"ACTIVE","etag":"1_532d4ed2-1086-400c-8214-a482f5abc417"}
+[info] 
+[info] === Deploying to 'eldar-9d86d'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-12-17T03:51:26.137Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:26.137Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:26.137Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eldar-9d86d/versions [none]
+[debug] [2024-12-17T03:51:26.137Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eldar-9d86d/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-12-17T03:51:27.761Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eldar-9d86d/versions 200
+[debug] [2024-12-17T03:51:27.761Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eldar-9d86d/versions {"name":"projects/907469813370/sites/eldar-9d86d/versions/437063a1c7153ca7","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[eldar-9d86d]: beginning deploy... 
+[info] i  hosting[eldar-9d86d]: found 15 files in build 
+[debug] [2024-12-17T03:51:27.774Z] [hosting] uploading with 200 concurrency
+[debug] [2024-12-17T03:51:27.867Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:27.868Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:27.869Z] [hosting] hash cache [YnVpbGQ] stored for 15 files
+[debug] [2024-12-17T03:51:27.869Z] [hosting][hash queue][FINAL] {"max":88,"min":6,"avg":13.266666666666667,"active":0,"complete":15,"success":15,"errored":0,"retried":0,"total":15,"elapsed":93}
+[debug] [2024-12-17T03:51:27.870Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/907469813370/sites/eldar-9d86d/versions/437063a1c7153ca7:populateFiles [none]
+[debug] [2024-12-17T03:51:27.870Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/907469813370/sites/eldar-9d86d/versions/437063a1c7153ca7:populateFiles {"files":{"/robots.txt":"b2090cf9761ef60aa06e4fab97679bd43dfa5e5df073701ead5879d7c68f1ec5","/manifest.json":"4368aeaf848ae2e048765562c289452f33ad2a175c4b1951ea8bdf2ada0d5b10","/asset-manifest.json":"e59a88c7cdea63af8091c1909f3643711f87c92b883f38d52db5813c82d6c500","/index.html":"559f08fcdfc2f56328ec6d990dcede7f9578b3075c7447e86aed559262600ffb","/404.html":"41d1e074106979fb6591ec6953bfe5ace2788be22f0ed4189bd54905ebb5b44d","/static/js/main.980cf983.js.LICENSE.txt":"7c1ed52cf5ce3510d8df523985379d92d52c595d4ac79eb885c5f98e10ff4527","/static/css/main.83b91cbe.css.map":"0df6f8ae270ae7d27d9e7092fb60344538819e51b29f3273e7c80efaa645d983","/static/css/main.83b91cbe.css":"fc96923c47f626196f010afd4478892dd35b40d1a0f4116925d5dabc4bfce096","/static/js/488.fd6d9b06.chunk.js":"d6031ac23c9f4711fe05d251ed24f499dd732cecb1ed3183cdd5cd089eeb77a0","/static/js/488.fd6d9b06.chunk.js.map":"38f4b8d86836eed62b63f49a776ca423ec2b5edff6c8fdd46d5059355b88526d","/logo192.png":"79e2b749561016bc8af300ea19f48347ceed3cb1a54f48ae456172eca45e08f0","/favicon.ico":"27edce7be5922cf0bef7d4136f69b5bfbdd5bf8c13c7b026f71187d41a00aa7d","/logo512.png":"212b102aa09e51b3b3e06647e81f7801a61333e171f6582e8124379aabccb41d","/static/js/main.980cf983.js":"b2ef069bf06b7c654efb3b2c13a91221e23113d3de614dd85821188ef95160aa","/static/js/main.980cf983.js.map":"fc9a5a77e23e0c3e425160d7d0132f74d26ac7c6d21e8d3a3d7c455238503d1a"}}
+[debug] [2024-12-17T03:51:28.199Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/907469813370/sites/eldar-9d86d/versions/437063a1c7153ca7:populateFiles 200
+[debug] [2024-12-17T03:51:28.200Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/907469813370/sites/eldar-9d86d/versions/437063a1c7153ca7:populateFiles {"uploadRequiredHashes":["d6031ac23c9f4711fe05d251ed24f499dd732cecb1ed3183cdd5cd089eeb77a0","b2090cf9761ef60aa06e4fab97679bd43dfa5e5df073701ead5879d7c68f1ec5","fc96923c47f626196f010afd4478892dd35b40d1a0f4116925d5dabc4bfce096","27edce7be5922cf0bef7d4136f69b5bfbdd5bf8c13c7b026f71187d41a00aa7d","79e2b749561016bc8af300ea19f48347ceed3cb1a54f48ae456172eca45e08f0","b2ef069bf06b7c654efb3b2c13a91221e23113d3de614dd85821188ef95160aa","fc9a5a77e23e0c3e425160d7d0132f74d26ac7c6d21e8d3a3d7c455238503d1a","38f4b8d86836eed62b63f49a776ca423ec2b5edff6c8fdd46d5059355b88526d","4368aeaf848ae2e048765562c289452f33ad2a175c4b1951ea8bdf2ada0d5b10","0df6f8ae270ae7d27d9e7092fb60344538819e51b29f3273e7c80efaa645d983","212b102aa09e51b3b3e06647e81f7801a61333e171f6582e8124379aabccb41d","41d1e074106979fb6591ec6953bfe5ace2788be22f0ed4189bd54905ebb5b44d","e59a88c7cdea63af8091c1909f3643711f87c92b883f38d52db5813c82d6c500","7c1ed52cf5ce3510d8df523985379d92d52c595d4ac79eb885c5f98e10ff4527","559f08fcdfc2f56328ec6d990dcede7f9578b3075c7447e86aed559262600ffb"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files"}
+[debug] [2024-12-17T03:51:28.201Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.201Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.201Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.201Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.202Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.202Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.202Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.202Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.202Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.202Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.203Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.203Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.203Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.203Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.204Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.204Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.204Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.204Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.205Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.205Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.205Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.205Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.206Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.206Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.206Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.206Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.207Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.207Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.207Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.207Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:28.208Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/d6031ac23c9f4711fe05d251ed24f499dd732cecb1ed3183cdd5cd089eeb77a0 [none]
+[debug] [2024-12-17T03:51:28.208Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/d6031ac23c9f4711fe05d251ed24f499dd732cecb1ed3183cdd5cd089eeb77a0 [stream]
+[debug] [2024-12-17T03:51:28.210Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/b2090cf9761ef60aa06e4fab97679bd43dfa5e5df073701ead5879d7c68f1ec5 [none]
+[debug] [2024-12-17T03:51:28.210Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/b2090cf9761ef60aa06e4fab97679bd43dfa5e5df073701ead5879d7c68f1ec5 [stream]
+[debug] [2024-12-17T03:51:28.211Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/fc96923c47f626196f010afd4478892dd35b40d1a0f4116925d5dabc4bfce096 [none]
+[debug] [2024-12-17T03:51:28.211Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/fc96923c47f626196f010afd4478892dd35b40d1a0f4116925d5dabc4bfce096 [stream]
+[debug] [2024-12-17T03:51:28.212Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/27edce7be5922cf0bef7d4136f69b5bfbdd5bf8c13c7b026f71187d41a00aa7d [none]
+[debug] [2024-12-17T03:51:28.212Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/27edce7be5922cf0bef7d4136f69b5bfbdd5bf8c13c7b026f71187d41a00aa7d [stream]
+[debug] [2024-12-17T03:51:28.213Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/79e2b749561016bc8af300ea19f48347ceed3cb1a54f48ae456172eca45e08f0 [none]
+[debug] [2024-12-17T03:51:28.214Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/79e2b749561016bc8af300ea19f48347ceed3cb1a54f48ae456172eca45e08f0 [stream]
+[debug] [2024-12-17T03:51:28.215Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/b2ef069bf06b7c654efb3b2c13a91221e23113d3de614dd85821188ef95160aa [none]
+[debug] [2024-12-17T03:51:28.215Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/b2ef069bf06b7c654efb3b2c13a91221e23113d3de614dd85821188ef95160aa [stream]
+[debug] [2024-12-17T03:51:28.216Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/fc9a5a77e23e0c3e425160d7d0132f74d26ac7c6d21e8d3a3d7c455238503d1a [none]
+[debug] [2024-12-17T03:51:28.216Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/fc9a5a77e23e0c3e425160d7d0132f74d26ac7c6d21e8d3a3d7c455238503d1a [stream]
+[debug] [2024-12-17T03:51:28.217Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/38f4b8d86836eed62b63f49a776ca423ec2b5edff6c8fdd46d5059355b88526d [none]
+[debug] [2024-12-17T03:51:28.217Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/38f4b8d86836eed62b63f49a776ca423ec2b5edff6c8fdd46d5059355b88526d [stream]
+[debug] [2024-12-17T03:51:28.218Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/4368aeaf848ae2e048765562c289452f33ad2a175c4b1951ea8bdf2ada0d5b10 [none]
+[debug] [2024-12-17T03:51:28.218Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/4368aeaf848ae2e048765562c289452f33ad2a175c4b1951ea8bdf2ada0d5b10 [stream]
+[debug] [2024-12-17T03:51:28.219Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/0df6f8ae270ae7d27d9e7092fb60344538819e51b29f3273e7c80efaa645d983 [none]
+[debug] [2024-12-17T03:51:28.219Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/0df6f8ae270ae7d27d9e7092fb60344538819e51b29f3273e7c80efaa645d983 [stream]
+[debug] [2024-12-17T03:51:28.220Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/212b102aa09e51b3b3e06647e81f7801a61333e171f6582e8124379aabccb41d [none]
+[debug] [2024-12-17T03:51:28.220Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/212b102aa09e51b3b3e06647e81f7801a61333e171f6582e8124379aabccb41d [stream]
+[debug] [2024-12-17T03:51:28.221Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/41d1e074106979fb6591ec6953bfe5ace2788be22f0ed4189bd54905ebb5b44d [none]
+[debug] [2024-12-17T03:51:28.221Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/41d1e074106979fb6591ec6953bfe5ace2788be22f0ed4189bd54905ebb5b44d [stream]
+[debug] [2024-12-17T03:51:28.222Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/e59a88c7cdea63af8091c1909f3643711f87c92b883f38d52db5813c82d6c500 [none]
+[debug] [2024-12-17T03:51:28.222Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/e59a88c7cdea63af8091c1909f3643711f87c92b883f38d52db5813c82d6c500 [stream]
+[debug] [2024-12-17T03:51:28.223Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/7c1ed52cf5ce3510d8df523985379d92d52c595d4ac79eb885c5f98e10ff4527 [none]
+[debug] [2024-12-17T03:51:28.223Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/7c1ed52cf5ce3510d8df523985379d92d52c595d4ac79eb885c5f98e10ff4527 [stream]
+[debug] [2024-12-17T03:51:28.224Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/559f08fcdfc2f56328ec6d990dcede7f9578b3075c7447e86aed559262600ffb [none]
+[debug] [2024-12-17T03:51:28.224Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/559f08fcdfc2f56328ec6d990dcede7f9578b3075c7447e86aed559262600ffb [stream]
+[debug] [2024-12-17T03:51:28.225Z] [hosting][populate queue][FINAL] {"max":340,"min":340,"avg":340,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":358}
+[debug] [2024-12-17T03:51:28.225Z] [hosting] uploads queued: 15
+[debug] [2024-12-17T03:51:29.787Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/41d1e074106979fb6591ec6953bfe5ace2788be22f0ed4189bd54905ebb5b44d 200
+[debug] [2024-12-17T03:51:29.787Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/41d1e074106979fb6591ec6953bfe5ace2788be22f0ed4189bd54905ebb5b44d [stream]
+[debug] [2024-12-17T03:51:29.794Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/38f4b8d86836eed62b63f49a776ca423ec2b5edff6c8fdd46d5059355b88526d 200
+[debug] [2024-12-17T03:51:29.794Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/38f4b8d86836eed62b63f49a776ca423ec2b5edff6c8fdd46d5059355b88526d [stream]
+[debug] [2024-12-17T03:51:29.799Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/7c1ed52cf5ce3510d8df523985379d92d52c595d4ac79eb885c5f98e10ff4527 200
+[debug] [2024-12-17T03:51:29.800Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/7c1ed52cf5ce3510d8df523985379d92d52c595d4ac79eb885c5f98e10ff4527 [stream]
+[debug] [2024-12-17T03:51:30.013Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/fc96923c47f626196f010afd4478892dd35b40d1a0f4116925d5dabc4bfce096 200
+[debug] [2024-12-17T03:51:30.013Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/fc96923c47f626196f010afd4478892dd35b40d1a0f4116925d5dabc4bfce096 [stream]
+[debug] [2024-12-17T03:51:30.023Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/79e2b749561016bc8af300ea19f48347ceed3cb1a54f48ae456172eca45e08f0 200
+[debug] [2024-12-17T03:51:30.023Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/79e2b749561016bc8af300ea19f48347ceed3cb1a54f48ae456172eca45e08f0 [stream]
+[debug] [2024-12-17T03:51:30.058Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/559f08fcdfc2f56328ec6d990dcede7f9578b3075c7447e86aed559262600ffb 200
+[debug] [2024-12-17T03:51:30.059Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/559f08fcdfc2f56328ec6d990dcede7f9578b3075c7447e86aed559262600ffb [stream]
+[debug] [2024-12-17T03:51:30.081Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/212b102aa09e51b3b3e06647e81f7801a61333e171f6582e8124379aabccb41d 200
+[debug] [2024-12-17T03:51:30.081Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/212b102aa09e51b3b3e06647e81f7801a61333e171f6582e8124379aabccb41d [stream]
+[debug] [2024-12-17T03:51:30.093Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/b2090cf9761ef60aa06e4fab97679bd43dfa5e5df073701ead5879d7c68f1ec5 200
+[debug] [2024-12-17T03:51:30.093Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/b2090cf9761ef60aa06e4fab97679bd43dfa5e5df073701ead5879d7c68f1ec5 [stream]
+[debug] [2024-12-17T03:51:30.155Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/e59a88c7cdea63af8091c1909f3643711f87c92b883f38d52db5813c82d6c500 200
+[debug] [2024-12-17T03:51:30.155Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/e59a88c7cdea63af8091c1909f3643711f87c92b883f38d52db5813c82d6c500 [stream]
+[debug] [2024-12-17T03:51:30.160Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/4368aeaf848ae2e048765562c289452f33ad2a175c4b1951ea8bdf2ada0d5b10 200
+[debug] [2024-12-17T03:51:30.161Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/4368aeaf848ae2e048765562c289452f33ad2a175c4b1951ea8bdf2ada0d5b10 [stream]
+[debug] [2024-12-17T03:51:30.164Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/d6031ac23c9f4711fe05d251ed24f499dd732cecb1ed3183cdd5cd089eeb77a0 200
+[debug] [2024-12-17T03:51:30.164Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/d6031ac23c9f4711fe05d251ed24f499dd732cecb1ed3183cdd5cd089eeb77a0 [stream]
+[debug] [2024-12-17T03:51:30.165Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/27edce7be5922cf0bef7d4136f69b5bfbdd5bf8c13c7b026f71187d41a00aa7d 200
+[debug] [2024-12-17T03:51:30.165Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/27edce7be5922cf0bef7d4136f69b5bfbdd5bf8c13c7b026f71187d41a00aa7d [stream]
+[debug] [2024-12-17T03:51:30.213Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/b2ef069bf06b7c654efb3b2c13a91221e23113d3de614dd85821188ef95160aa 200
+[debug] [2024-12-17T03:51:30.213Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/b2ef069bf06b7c654efb3b2c13a91221e23113d3de614dd85821188ef95160aa [stream]
+[debug] [2024-12-17T03:51:30.276Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/0df6f8ae270ae7d27d9e7092fb60344538819e51b29f3273e7c80efaa645d983 200
+[debug] [2024-12-17T03:51:30.277Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/0df6f8ae270ae7d27d9e7092fb60344538819e51b29f3273e7c80efaa645d983 [stream]
+[debug] [2024-12-17T03:51:30.647Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/fc9a5a77e23e0c3e425160d7d0132f74d26ac7c6d21e8d3a3d7c455238503d1a 200
+[debug] [2024-12-17T03:51:30.648Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/eldar-9d86d/versions/437063a1c7153ca7/files/fc9a5a77e23e0c3e425160d7d0132f74d26ac7c6d21e8d3a3d7c455238503d1a [stream]
+[debug] [2024-12-17T03:51:30.648Z] [hosting][upload queue][FINAL] {"max":2445,"min":1582,"avg":1892.2,"active":0,"complete":15,"success":15,"errored":0,"retried":0,"total":15,"elapsed":2448}
+[info] +  hosting[eldar-9d86d]: file upload complete 
+[debug] [2024-12-17T03:51:30.649Z] [hosting] deploy completed after 2885ms
+[debug] [2024-12-17T03:51:30.649Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "eldar-9d86d"
+    },
+    "version": "projects/907469813370/sites/eldar-9d86d/versions/437063a1c7153ca7"
+  }
+]
+[info] i  hosting[eldar-9d86d]: finalizing version... 
+[debug] [2024-12-17T03:51:30.651Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:30.651Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:30.651Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eldar-9d86d/versions/437063a1c7153ca7 updateMask=status%2Cconfig
+[debug] [2024-12-17T03:51:30.652Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eldar-9d86d/versions/437063a1c7153ca7 {"status":"FINALIZED","config":{}}
+[debug] [2024-12-17T03:51:31.032Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eldar-9d86d/versions/437063a1c7153ca7 200
+[debug] [2024-12-17T03:51:31.033Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eldar-9d86d/versions/437063a1c7153ca7 {"name":"projects/907469813370/sites/eldar-9d86d/versions/437063a1c7153ca7","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-12-17T03:51:26.643534Z","createUser":{"email":"tashbolotov_e@auca.kg"},"finalizeTime":"2024-12-17T03:51:30.341396Z","finalizeUser":{"email":"tashbolotov_e@auca.kg"}}
+[debug] [2024-12-17T03:51:31.033Z] [hosting] finalized version for eldar-9d86d:[object Object]
+[info] +  hosting[eldar-9d86d]: version finalized 
+[info] i  hosting[eldar-9d86d]: releasing new version... 
+[debug] [2024-12-17T03:51:31.034Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:31.034Z] Checked if tokens are valid: true, expires at: 1734411003499
+[debug] [2024-12-17T03:51:31.034Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eldar-9d86d/channels/live/releases versionName=projects%2F907469813370%2Fsites%2Feldar-9d86d%2Fversions%2F437063a1c7153ca7
+[debug] [2024-12-17T03:51:31.035Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eldar-9d86d/channels/live/releases {}
+[debug] [2024-12-17T03:51:31.372Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eldar-9d86d/channels/live/releases 200
+[debug] [2024-12-17T03:51:31.372Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/eldar-9d86d/channels/live/releases {"name":"projects/907469813370/sites/eldar-9d86d/channels/live/releases/1734407490136000","version":{"name":"projects/907469813370/sites/eldar-9d86d/versions/437063a1c7153ca7","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-12-17T03:51:26.643534Z","createUser":{"email":"tashbolotov_e@auca.kg","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI3uPfUC3z1VklaB4lJ8vKSOEU430-dENtDXWXSzUc16vOMIvY"},"finalizeTime":"2024-12-17T03:51:30.341396Z","finalizeUser":{"email":"tashbolotov_e@auca.kg","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI3uPfUC3z1VklaB4lJ8vKSOEU430-dENtDXWXSzUc16vOMIvY"}},"type":"DEPLOY","releaseTime":"2024-12-17T03:51:30.136Z","releaseUser":{"email":"tashbolotov_e@auca.kg","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI3uPfUC3z1VklaB4lJ8vKSOEU430-dENtDXWXSzUc16vOMIvY"}}
+[debug] [2024-12-17T03:51:31.372Z] [hosting] release: {"name":"projects/907469813370/sites/eldar-9d86d/channels/live/releases/1734407490136000","version":{"name":"projects/907469813370/sites/eldar-9d86d/versions/437063a1c7153ca7","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2024-12-17T03:51:26.643534Z","createUser":{"email":"tashbolotov_e@auca.kg","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI3uPfUC3z1VklaB4lJ8vKSOEU430-dENtDXWXSzUc16vOMIvY"},"finalizeTime":"2024-12-17T03:51:30.341396Z","finalizeUser":{"email":"tashbolotov_e@auca.kg","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI3uPfUC3z1VklaB4lJ8vKSOEU430-dENtDXWXSzUc16vOMIvY"}},"type":"DEPLOY","releaseTime":"2024-12-17T03:51:30.136Z","releaseUser":{"email":"tashbolotov_e@auca.kg","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocI3uPfUC3z1VklaB4lJ8vKSOEU430-dENtDXWXSzUc16vOMIvY"}}
+[info] +  hosting[eldar-9d86d]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/eldar-9d86d/overview
+[info] Hosting URL: https://eldar-9d86d.web.app
